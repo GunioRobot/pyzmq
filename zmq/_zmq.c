@@ -165,7 +165,7 @@
   #elif defined(_MSC_VER)
     #define CYTHON_INLINE __inline
   #else
-    #define CYTHON_INLINE 
+    #define CYTHON_INLINE
   #endif
 #endif
 
@@ -262,7 +262,7 @@ static CYTHON_INLINE size_t __Pyx_PyInt_AsSize_t(PyObject*);
 
 #ifdef __GNUC__
 /* Test for GCC > 2.95 */
-#if __GNUC__ > 2 ||               (__GNUC__ == 2 && (__GNUC_MINOR__ > 95)) 
+#if __GNUC__ > 2 ||               (__GNUC__ == 2 && (__GNUC_MINOR__ > 95))
 #define likely(x)   __builtin_expect(!!(x), 1)
 #define unlikely(x) __builtin_expect(!!(x), 0)
 #else /* __GNUC__ > 2 ... */
@@ -273,7 +273,7 @@ static CYTHON_INLINE size_t __Pyx_PyInt_AsSize_t(PyObject*);
 #define likely(x)   (x)
 #define unlikely(x) (x)
 #endif /* __GNUC__ */
-    
+
 static PyObject *__pyx_m;
 static PyObject *__pyx_b;
 static PyObject *__pyx_empty_tuple;
@@ -288,11 +288,11 @@ static const char **__pyx_f;
 /* Type declarations */
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":271
- * 
- * 
+ *
+ *
  * cdef class Message:             # <<<<<<<<<<<<<<
  *     """A Message class for non-copy send/recvs.
- * 
+ *
  */
 
 struct __pyx_obj_3zmq_4_zmq_Message {
@@ -303,11 +303,11 @@ struct __pyx_obj_3zmq_4_zmq_Message {
 };
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":401
- * 
- * 
+ *
+ *
  * cdef class Socket:             # <<<<<<<<<<<<<<
  *     """A 0MQ socket.
- * 
+ *
  */
 
 struct __pyx_obj_3zmq_4_zmq_Socket {
@@ -319,11 +319,11 @@ struct __pyx_obj_3zmq_4_zmq_Socket {
 };
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":360
- * 
- * 
+ *
+ *
  * cdef class Context:             # <<<<<<<<<<<<<<
  *     """Manage the lifecycle of a 0MQ context.
- * 
+ *
  */
 
 struct __pyx_obj_3zmq_4_zmq_Context {
@@ -333,11 +333,11 @@ struct __pyx_obj_3zmq_4_zmq_Context {
 
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":271
- * 
- * 
+ *
+ *
  * cdef class Message:             # <<<<<<<<<<<<<<
  *     """A Message class for non-copy send/recvs.
- * 
+ *
  */
 
 struct __pyx_vtabstruct_3zmq_4_zmq_Message {
@@ -878,7 +878,7 @@ static PyObject *__pyx_k_15;
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/allocate.pxi":9
  * #---------------------------------------------------------------------
- * 
+ *
  * cdef inline void *memnew(size_t n):             # <<<<<<<<<<<<<<
  *     if n == 0: n = 1
  *     return malloc(n)
@@ -890,11 +890,11 @@ static CYTHON_INLINE void *__pyx_f_3zmq_4_zmq_memnew(size_t __pyx_v_n) {
   __Pyx_RefNannySetupContext("memnew");
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/allocate.pxi":10
- * 
+ *
  * cdef inline void *memnew(size_t n):
  *     if n == 0: n = 1             # <<<<<<<<<<<<<<
  *     return malloc(n)
- * 
+ *
  */
   __pyx_t_1 = (__pyx_v_n == 0);
   if (__pyx_t_1) {
@@ -907,7 +907,7 @@ static CYTHON_INLINE void *__pyx_f_3zmq_4_zmq_memnew(size_t __pyx_v_n) {
  * cdef inline void *memnew(size_t n):
  *     if n == 0: n = 1
  *     return malloc(n)             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline void memdel(void *p):
  */
   __pyx_r = malloc(__pyx_v_n);
@@ -921,10 +921,10 @@ static CYTHON_INLINE void *__pyx_f_3zmq_4_zmq_memnew(size_t __pyx_v_n) {
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/allocate.pxi":13
  *     return malloc(n)
- * 
+ *
  * cdef inline void memdel(void *p):             # <<<<<<<<<<<<<<
  *     if p != NULL: free(p)
- * 
+ *
  */
 
 static CYTHON_INLINE void __pyx_f_3zmq_4_zmq_memdel(void *__pyx_v_p) {
@@ -932,10 +932,10 @@ static CYTHON_INLINE void __pyx_f_3zmq_4_zmq_memdel(void *__pyx_v_p) {
   __Pyx_RefNannySetupContext("memdel");
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/allocate.pxi":14
- * 
+ *
  * cdef inline void memdel(void *p):
  *     if p != NULL: free(p)             # <<<<<<<<<<<<<<
- * 
+ *
  * cdef inline object allocate(size_t n, void **pp):
  */
   __pyx_t_1 = (__pyx_v_p != NULL);
@@ -950,7 +950,7 @@ static CYTHON_INLINE void __pyx_f_3zmq_4_zmq_memdel(void *__pyx_v_p) {
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/allocate.pxi":16
  *     if p != NULL: free(p)
- * 
+ *
  * cdef inline object allocate(size_t n, void **pp):             # <<<<<<<<<<<<<<
  *     cdef object cob
  *     cdef void *p = memnew(n)
@@ -1036,7 +1036,7 @@ static CYTHON_INLINE PyObject *__pyx_f_3zmq_4_zmq_allocate(size_t __pyx_v_n, voi
       __Pyx_GIVEREF(__pyx_t_3);
       __Pyx_GIVEREF(__pyx_t_4);
       __Pyx_ErrRestore(__pyx_t_2, __pyx_t_3, __pyx_t_4);
-      __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_4 = 0; 
+      __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_4 = 0;
       {__pyx_filename = __pyx_f[1]; __pyx_lineno = 21; __pyx_clineno = __LINE__; goto __pyx_L6_except_error;}
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -1091,8 +1091,8 @@ static CYTHON_INLINE PyObject *__pyx_f_3zmq_4_zmq_allocate(size_t __pyx_v_n, voi
 }
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":225
- * 
- * 
+ *
+ *
  * def strerror(errnum):             # <<<<<<<<<<<<<<
  *     """Return the error string given the error number."""
  *     return zmq_strerror(errnum)
@@ -1111,7 +1111,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_strerror(PyObject *__pyx_self, PyObject *__
  * def strerror(errnum):
  *     """Return the error string given the error number."""
  *     return zmq_strerror(errnum)             # <<<<<<<<<<<<<<
- * 
+ *
  * class ZMQBaseError(Exception):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1136,10 +1136,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_strerror(PyObject *__pyx_self, PyObject *__
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":235
  *     """Base exception class for 0MQ errors in Python."""
- * 
+ *
  *     def __init__(self, error=None):             # <<<<<<<<<<<<<<
  *         """Wrap an errno style error.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_8ZMQError___init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -1278,7 +1278,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_8ZMQError___init__(PyObject *__pyx_self, Py
  *         else:
  *             self.errstr = str(error)             # <<<<<<<<<<<<<<
  *             self.errno = None
- * 
+ *
  */
     __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 250; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
@@ -1295,7 +1295,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_8ZMQError___init__(PyObject *__pyx_self, Py
  *         else:
  *             self.errstr = str(error)
  *             self.errno = None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __str__(self):
  */
     if (PyObject_SetAttr(__pyx_v_self, __pyx_n_s__errno, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 251; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -1320,10 +1320,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_8ZMQError___init__(PyObject *__pyx_self, Py
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":253
  *             self.errno = None
- * 
+ *
  *     def __str__(self):             # <<<<<<<<<<<<<<
  *         return self.errstr
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_8ZMQError___str__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
@@ -1335,10 +1335,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_8ZMQError___str__(PyObject *__pyx_self, PyO
   __pyx_self = __pyx_self;
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":254
- * 
+ *
  *     def __str__(self):
  *         return self.errstr             # <<<<<<<<<<<<<<
- * 
+ *
  * class ZMQBindError(ZMQBaseError):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1361,8 +1361,8 @@ static PyObject *__pyx_pf_3zmq_4_zmq_8ZMQError___str__(PyObject *__pyx_self, PyO
 }
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":265
- * 
- * 
+ *
+ *
  * cdef void free_python_msg(void *data, void *hint) with gil:             # <<<<<<<<<<<<<<
  *     """A function for DECREF'ing Python based messages."""
  *     if hint != NULL:
@@ -1378,7 +1378,7 @@ static  void __pyx_f_3zmq_4_zmq_free_python_msg(void *__pyx_v_data, void *__pyx_
  *     """A function for DECREF'ing Python based messages."""
  *     if hint != NULL:             # <<<<<<<<<<<<<<
  *         Py_DECREF(<object>hint)
- * 
+ *
  */
   __pyx_t_1 = (__pyx_v_hint != NULL);
   if (__pyx_t_1) {
@@ -1387,8 +1387,8 @@ static  void __pyx_f_3zmq_4_zmq_free_python_msg(void *__pyx_v_data, void *__pyx_
  *     """A function for DECREF'ing Python based messages."""
  *     if hint != NULL:
  *         Py_DECREF(<object>hint)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     Py_DECREF(((PyObject *)__pyx_v_hint));
     goto __pyx_L3;
@@ -1401,7 +1401,7 @@ static  void __pyx_f_3zmq_4_zmq_free_python_msg(void *__pyx_v_data, void *__pyx_
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":287
  *     cdef object data
- * 
+ *
  *     def __cinit__(self, object data=None):             # <<<<<<<<<<<<<<
  *         cdef int rc
  *         # Save the data object in case the user wants the the data as a str.
@@ -1476,13 +1476,13 @@ static int __pyx_pf_3zmq_4_zmq_7Message___cinit__(PyObject *__pyx_v_self, PyObje
  *         self.data = data
  *         cdef char *data_c = NULL             # <<<<<<<<<<<<<<
  *         cdef Py_ssize_t data_len_c
- * 
+ *
  */
   __pyx_v_data_c = NULL;
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":294
  *         cdef Py_ssize_t data_len_c
- * 
+ *
  *         if data is None:             # <<<<<<<<<<<<<<
  *             with nogil:
  *                 rc = zmq_msg_init(&self.zmq_msg)
@@ -1491,7 +1491,7 @@ static int __pyx_pf_3zmq_4_zmq_7Message___cinit__(PyObject *__pyx_v_self, PyObje
   if (__pyx_t_1) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":295
- * 
+ *
  *         if data is None:
  *             with nogil:             # <<<<<<<<<<<<<<
  *                 rc = zmq_msg_init(&self.zmq_msg)
@@ -1513,7 +1513,7 @@ static int __pyx_pf_3zmq_4_zmq_7Message___cinit__(PyObject *__pyx_v_self, PyObje
       /*finally:*/ {
 
         /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":295
- * 
+ *
  *         if data is None:
  *             with nogil:             # <<<<<<<<<<<<<<
  *                 rc = zmq_msg_init(&self.zmq_msg)
@@ -1621,7 +1621,7 @@ static int __pyx_pf_3zmq_4_zmq_7Message___cinit__(PyObject *__pyx_v_self, PyObje
  *             if rc != 0:
  *                 Py_DECREF(data)             # <<<<<<<<<<<<<<
  *                 raise ZMQError()
- * 
+ *
  */
       Py_DECREF(__pyx_v_data);
 
@@ -1629,7 +1629,7 @@ static int __pyx_pf_3zmq_4_zmq_7Message___cinit__(PyObject *__pyx_v_self, PyObje
  *             if rc != 0:
  *                 Py_DECREF(data)
  *                 raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __dealloc__(self):
  */
       __pyx_t_3 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 312; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -1662,7 +1662,7 @@ static int __pyx_pf_3zmq_4_zmq_7Message___cinit__(PyObject *__pyx_v_self, PyObje
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":314
  *                 raise ZMQError()
- * 
+ *
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
  *         cdef int rc
  *         # This simply decreases the 0MQ ref-count of zmq_msg.
@@ -1691,7 +1691,7 @@ static void __pyx_pf_3zmq_4_zmq_7Message___dealloc__(PyObject *__pyx_v_self) {
  *         rc = zmq_msg_close(&self.zmq_msg)
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
   __pyx_t_1 = (__pyx_v_rc != 0);
   if (__pyx_t_1) {
@@ -1700,7 +1700,7 @@ static void __pyx_pf_3zmq_4_zmq_7Message___dealloc__(PyObject *__pyx_v_self) {
  *         rc = zmq_msg_close(&self.zmq_msg)
  *         if rc != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __copy__(self):
  */
     __pyx_t_2 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 319; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -1727,10 +1727,10 @@ static void __pyx_pf_3zmq_4_zmq_7Message___dealloc__(PyObject *__pyx_v_self) {
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":321
  *             raise ZMQError()
- * 
+ *
  *     def __copy__(self):             # <<<<<<<<<<<<<<
  *         """Create a shallow copy of the message.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_7Message___copy__(PyObject *__pyx_v_self, PyObject *unused); /*proto*/
@@ -1744,7 +1744,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_7Message___copy__(PyObject *__pyx_v_self, P
  *         the Python is first turned into a 0MQ message.
  *         """
  *         return self.fast_copy()             # <<<<<<<<<<<<<<
- * 
+ *
  *     cdef Message fast_copy(self):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1768,7 +1768,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_7Message___copy__(PyObject *__pyx_v_self, P
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":331
  *         return self.fast_copy()
- * 
+ *
  *     cdef Message fast_copy(self):             # <<<<<<<<<<<<<<
  *         """Fast, cdef'd version of shallow copy of the message."""
  *         cdef Message new_msg
@@ -1820,7 +1820,7 @@ static  struct __pyx_obj_3zmq_4_zmq_Message *__pyx_f_3zmq_4_zmq_7Message_fast_co
  *         if self.data is not None:
  *             new_msg.data = self.data             # <<<<<<<<<<<<<<
  *         return new_msg
- * 
+ *
  */
     __Pyx_INCREF(__pyx_v_self->data);
     __Pyx_GIVEREF(__pyx_v_self->data);
@@ -1835,7 +1835,7 @@ static  struct __pyx_obj_3zmq_4_zmq_Message *__pyx_f_3zmq_4_zmq_7Message_fast_co
  *         if self.data is not None:
  *             new_msg.data = self.data
  *         return new_msg             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __len__(self):
  */
   __Pyx_XDECREF(((PyObject *)__pyx_r));
@@ -1859,7 +1859,7 @@ static  struct __pyx_obj_3zmq_4_zmq_Message *__pyx_f_3zmq_4_zmq_7Message_fast_co
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":344
  *         return new_msg
- * 
+ *
  *     def __len__(self):             # <<<<<<<<<<<<<<
  *         """Return the length of the message in bytes."""
  *         return <int>zmq_msg_size(&self.zmq_msg)
@@ -1875,7 +1875,7 @@ static Py_ssize_t __pyx_pf_3zmq_4_zmq_7Message___len__(PyObject *__pyx_v_self) {
  *     def __len__(self):
  *         """Return the length of the message in bytes."""
  *         return <int>zmq_msg_size(&self.zmq_msg)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __str__(self):
  */
   __pyx_r = ((int)zmq_msg_size((&((struct __pyx_obj_3zmq_4_zmq_Message *)__pyx_v_self)->zmq_msg)));
@@ -1889,7 +1889,7 @@ static Py_ssize_t __pyx_pf_3zmq_4_zmq_7Message___len__(PyObject *__pyx_v_self) {
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":348
  *         return <int>zmq_msg_size(&self.zmq_msg)
- * 
+ *
  *     def __str__(self):             # <<<<<<<<<<<<<<
  *         """Return the str form of the message."""
  *         cdef char *data_c = NULL
@@ -1964,8 +1964,8 @@ static PyObject *__pyx_pf_3zmq_4_zmq_7Message___str__(PyObject *__pyx_v_self) {
  *             return PyString_FromStringAndSize(data_c, data_len_c)
  *         else:
  *             return self.data             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(((struct __pyx_obj_3zmq_4_zmq_Message *)__pyx_v_self)->data);
@@ -1989,7 +1989,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_7Message___str__(PyObject *__pyx_v_self) {
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":374
  *     cdef void *handle
- * 
+ *
  *     def __cinit__(self, int io_threads=1):             # <<<<<<<<<<<<<<
  *         self.handle = NULL
  *         if not io_threads > 0:
@@ -2046,7 +2046,7 @@ static int __pyx_pf_3zmq_4_zmq_7Context___cinit__(PyObject *__pyx_v_self, PyObje
   __Pyx_INCREF((PyObject *)__pyx_v_self);
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":375
- * 
+ *
  *     def __cinit__(self, int io_threads=1):
  *         self.handle = NULL             # <<<<<<<<<<<<<<
  *         if not io_threads > 0:
@@ -2105,7 +2105,7 @@ static int __pyx_pf_3zmq_4_zmq_7Context___cinit__(PyObject *__pyx_v_self, PyObje
  *         self.handle = zmq_init(io_threads)
  *         if self.handle == NULL:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
   __pyx_t_1 = (((struct __pyx_obj_3zmq_4_zmq_Context *)__pyx_v_self)->handle == NULL);
   if (__pyx_t_1) {
@@ -2114,7 +2114,7 @@ static int __pyx_pf_3zmq_4_zmq_7Context___cinit__(PyObject *__pyx_v_self, PyObje
  *         self.handle = zmq_init(io_threads)
  *         if self.handle == NULL:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __dealloc__(self):
  */
     __pyx_t_3 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 380; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -2145,7 +2145,7 @@ static int __pyx_pf_3zmq_4_zmq_7Context___cinit__(PyObject *__pyx_v_self, PyObje
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":382
  *             raise ZMQError()
- * 
+ *
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
  *         cdef int rc
  *         if self.handle != NULL:
@@ -2184,7 +2184,7 @@ static void __pyx_pf_3zmq_4_zmq_7Context___dealloc__(PyObject *__pyx_v_self) {
  *             rc = zmq_term(self.handle)
  *             if rc != 0:             # <<<<<<<<<<<<<<
  *                 raise ZMQError()
- * 
+ *
  */
     __pyx_t_1 = (__pyx_v_rc != 0);
     if (__pyx_t_1) {
@@ -2193,7 +2193,7 @@ static void __pyx_pf_3zmq_4_zmq_7Context___dealloc__(PyObject *__pyx_v_self) {
  *             rc = zmq_term(self.handle)
  *             if rc != 0:
  *                 raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def socket(self, int socket_type):
  */
       __pyx_t_2 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 387; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -2223,10 +2223,10 @@ static void __pyx_pf_3zmq_4_zmq_7Context___dealloc__(PyObject *__pyx_v_self) {
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":389
  *                 raise ZMQError()
- * 
+ *
  *     def socket(self, int socket_type):             # <<<<<<<<<<<<<<
  *         """Create a Socket associated with this Context.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_7Context_socket(PyObject *__pyx_v_self, PyObject *__pyx_arg_socket_type); /*proto*/
@@ -2250,8 +2250,8 @@ static PyObject *__pyx_pf_3zmq_4_zmq_7Context_socket(PyObject *__pyx_v_self, PyO
  *             REQ, REP, PUB, SUB, PAIR, XREQ, XREP, UPSTREAM, DOWNSTREAM.
  *         """
  *         return Socket(self, socket_type)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyInt_FromLong(__pyx_v_socket_type); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 398; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -2289,7 +2289,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_7Context_socket(PyObject *__pyx_v_self, PyO
  *     # collected until the socket it done with it.
  *     cdef public Context context             # <<<<<<<<<<<<<<
  *     cdef public object closed
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_7context___get__(PyObject *__pyx_v_self); /*proto*/
@@ -2331,7 +2331,7 @@ static int __pyx_pf_3zmq_4_zmq_6Socket_7context___set__(PyObject *__pyx_v_self, 
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":422
  *     cdef public object closed
- * 
+ *
  *     def __cinit__(self, Context context, int socket_type):             # <<<<<<<<<<<<<<
  *         self.handle = NULL
  *         self.context = context
@@ -2391,7 +2391,7 @@ static int __pyx_pf_3zmq_4_zmq_6Socket___cinit__(PyObject *__pyx_v_self, PyObjec
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_context), __pyx_ptype_3zmq_4_zmq_Context, 1, "context", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 422; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":423
- * 
+ *
  *     def __cinit__(self, Context context, int socket_type):
  *         self.handle = NULL             # <<<<<<<<<<<<<<
  *         self.context = context
@@ -2445,7 +2445,7 @@ static int __pyx_pf_3zmq_4_zmq_6Socket___cinit__(PyObject *__pyx_v_self, PyObjec
  *         if self.handle == NULL:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
  *         self.closed = False
- * 
+ *
  */
     __pyx_t_2 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 428; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
@@ -2463,7 +2463,7 @@ static int __pyx_pf_3zmq_4_zmq_6Socket___cinit__(PyObject *__pyx_v_self, PyObjec
  *         if self.handle == NULL:
  *             raise ZMQError()
  *         self.closed = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __dealloc__(self):
  */
   __pyx_t_3 = __Pyx_PyBool_FromLong(0); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 429; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -2490,10 +2490,10 @@ static int __pyx_pf_3zmq_4_zmq_6Socket___cinit__(PyObject *__pyx_v_self, PyObjec
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":431
  *         self.closed = False
- * 
+ *
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
  *         self.close()
- * 
+ *
  */
 
 static void __pyx_pf_3zmq_4_zmq_6Socket___dealloc__(PyObject *__pyx_v_self); /*proto*/
@@ -2503,10 +2503,10 @@ static void __pyx_pf_3zmq_4_zmq_6Socket___dealloc__(PyObject *__pyx_v_self) {
   __Pyx_RefNannySetupContext("__dealloc__");
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":432
- * 
+ *
  *     def __dealloc__(self):
  *         self.close()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def close(self):
  */
   __pyx_t_1 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s__close); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 432; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -2527,10 +2527,10 @@ static void __pyx_pf_3zmq_4_zmq_6Socket___dealloc__(PyObject *__pyx_v_self) {
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":434
  *         self.close()
- * 
+ *
  *     def close(self):             # <<<<<<<<<<<<<<
  *         """Close the socket.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_close(PyObject *__pyx_v_self, PyObject *unused); /*proto*/
@@ -2606,7 +2606,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_close(PyObject *__pyx_v_self, PyObj
  *                 raise ZMQError()
  *             self.handle = NULL             # <<<<<<<<<<<<<<
  *             self.closed = True
- * 
+ *
  */
     ((struct __pyx_obj_3zmq_4_zmq_Socket *)__pyx_v_self)->handle = NULL;
 
@@ -2614,7 +2614,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_close(PyObject *__pyx_v_self, PyObj
  *                 raise ZMQError()
  *             self.handle = NULL
  *             self.closed = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _check_closed(self):
  */
     __pyx_t_5 = __Pyx_PyBool_FromLong(1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 447; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -2644,7 +2644,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_close(PyObject *__pyx_v_self, PyObj
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":449
  *             self.closed = True
- * 
+ *
  *     def _check_closed(self):             # <<<<<<<<<<<<<<
  *         if self.closed:
  *             raise ZMQError(ENOTSUP)
@@ -2661,11 +2661,11 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__check_closed(PyObject *__pyx_v_sel
   __Pyx_INCREF((PyObject *)__pyx_v_self);
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":450
- * 
+ *
  *     def _check_closed(self):
  *         if self.closed:             # <<<<<<<<<<<<<<
  *             raise ZMQError(ENOTSUP)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_IsTrue(((struct __pyx_obj_3zmq_4_zmq_Socket *)__pyx_v_self)->closed); if (unlikely(__pyx_t_1 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 450; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_1) {
@@ -2674,7 +2674,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__check_closed(PyObject *__pyx_v_sel
  *     def _check_closed(self):
  *         if self.closed:
  *             raise ZMQError(ENOTSUP)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def setsockopt(self, int option, optval):
  */
     __pyx_t_2 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 451; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -2714,10 +2714,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__check_closed(PyObject *__pyx_v_sel
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":453
  *             raise ZMQError(ENOTSUP)
- * 
+ *
  *     def setsockopt(self, int option, optval):             # <<<<<<<<<<<<<<
  *         """Set socket options.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_setsockopt(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -2784,9 +2784,9 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_setsockopt(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":470
  *         cdef int rc
- * 
+ *
  *         self._check_closed()             # <<<<<<<<<<<<<<
- * 
+ *
  *         if option in [SUBSCRIBE, UNSUBSCRIBE, IDENTITY]:
  */
   __pyx_t_1 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s___check_closed); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 470; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -2798,7 +2798,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_setsockopt(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":472
  *         self._check_closed()
- * 
+ *
  *         if option in [SUBSCRIBE, UNSUBSCRIBE, IDENTITY]:             # <<<<<<<<<<<<<<
  *             if not isinstance(optval, str):
  *                 raise TypeError('expected str, got: %r' % optval)
@@ -2851,13 +2851,13 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_setsockopt(PyObject *__pyx_v_self, 
   if (__pyx_t_5) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":473
- * 
+ *
  *         if option in [SUBSCRIBE, UNSUBSCRIBE, IDENTITY]:
  *             if not isinstance(optval, str):             # <<<<<<<<<<<<<<
  *                 raise TypeError('expected str, got: %r' % optval)
  *             rc = zmq_setsockopt(
  */
-    __pyx_t_5 = PyObject_TypeCheck(__pyx_v_optval, ((PyTypeObject *)((PyObject*)&PyString_Type))); 
+    __pyx_t_5 = PyObject_TypeCheck(__pyx_v_optval, ((PyTypeObject *)((PyObject*)&PyString_Type)));
     __pyx_t_6 = (!__pyx_t_5);
     if (__pyx_t_6) {
 
@@ -3079,7 +3079,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_setsockopt(PyObject *__pyx_v_self, 
  *                 raise TypeError('expected int, got: %r' % optval)
  *             optval_int_c = optval
  */
-    __pyx_t_5 = PyObject_TypeCheck(__pyx_v_optval, ((PyTypeObject *)((PyObject*)&PyInt_Type))); 
+    __pyx_t_5 = PyObject_TypeCheck(__pyx_v_optval, ((PyTypeObject *)((PyObject*)&PyInt_Type)));
     __pyx_t_6 = (!__pyx_t_5);
     if (__pyx_t_6) {
 
@@ -3133,7 +3133,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_setsockopt(PyObject *__pyx_v_self, 
  *             )
  *         else:
  *             raise ZMQError(EINVAL)             # <<<<<<<<<<<<<<
- * 
+ *
  *         if rc != 0:
  */
     __pyx_t_4 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 489; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -3157,19 +3157,19 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_setsockopt(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":491
  *             raise ZMQError(EINVAL)
- * 
+ *
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
   __pyx_t_6 = (__pyx_v_rc != 0);
   if (__pyx_t_6) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":492
- * 
+ *
  *         if rc != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def getsockopt(self, int option):
  */
     __pyx_t_1 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 492; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -3202,10 +3202,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_setsockopt(PyObject *__pyx_v_self, 
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":494
  *             raise ZMQError()
- * 
+ *
  *     def getsockopt(self, int option):             # <<<<<<<<<<<<<<
  *         """Get the value of a socket option.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_getsockopt(PyObject *__pyx_v_self, PyObject *__pyx_arg_option); /*proto*/
@@ -3239,9 +3239,9 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_getsockopt(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":515
  *         cdef int rc
- * 
+ *
  *         self._check_closed()             # <<<<<<<<<<<<<<
- * 
+ *
  *         if option in [IDENTITY]:
  */
   __pyx_t_1 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s___check_closed); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 515; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -3253,7 +3253,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_getsockopt(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":517
  *         self._check_closed()
- * 
+ *
  *         if option in [IDENTITY]:             # <<<<<<<<<<<<<<
  *             sz = 255
  *             rc = zmq_getsockopt(self.handle, option, <void *>identity_str_c, &sz)
@@ -3273,7 +3273,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_getsockopt(PyObject *__pyx_v_self, 
   if (__pyx_t_6) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":518
- * 
+ *
  *         if option in [IDENTITY]:
  *             sz = 255             # <<<<<<<<<<<<<<
  *             rc = zmq_getsockopt(self.handle, option, <void *>identity_str_c, &sz)
@@ -3607,7 +3607,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_getsockopt(PyObject *__pyx_v_self, 
  *             result = optval_int_c
  *         else:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *         return result
  */
     __pyx_t_4 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 531; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -3623,9 +3623,9 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_getsockopt(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":533
  *             raise ZMQError()
- * 
+ *
  *         return result             # <<<<<<<<<<<<<<
- * 
+ *
  *     def bind(self, addr):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3651,10 +3651,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_getsockopt(PyObject *__pyx_v_self, 
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":535
  *         return result
- * 
+ *
  *     def bind(self, addr):             # <<<<<<<<<<<<<<
  *         """Bind the socket to an address.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_bind(PyObject *__pyx_v_self, PyObject *__pyx_v_addr); /*proto*/
@@ -3673,9 +3673,9 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_bind(PyObject *__pyx_v_self, PyObje
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":551
  *         cdef int rc
- * 
+ *
  *         self._check_closed()             # <<<<<<<<<<<<<<
- * 
+ *
  *         if not isinstance(addr, str):
  */
   __pyx_t_1 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s___check_closed); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 551; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -3687,17 +3687,17 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_bind(PyObject *__pyx_v_self, PyObje
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":553
  *         self._check_closed()
- * 
+ *
  *         if not isinstance(addr, str):             # <<<<<<<<<<<<<<
  *             raise TypeError('expected str, got: %r' % addr)
  *         rc = zmq_bind(self.handle, addr)
  */
-  __pyx_t_3 = PyObject_TypeCheck(__pyx_v_addr, ((PyTypeObject *)((PyObject*)&PyString_Type))); 
+  __pyx_t_3 = PyObject_TypeCheck(__pyx_v_addr, ((PyTypeObject *)((PyObject*)&PyString_Type)));
   __pyx_t_4 = (!__pyx_t_3);
   if (__pyx_t_4) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":554
- * 
+ *
  *         if not isinstance(addr, str):
  *             raise TypeError('expected str, got: %r' % addr)             # <<<<<<<<<<<<<<
  *         rc = zmq_bind(self.handle, addr)
@@ -3735,7 +3735,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_bind(PyObject *__pyx_v_self, PyObje
  *         rc = zmq_bind(self.handle, addr)
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
   __pyx_t_4 = (__pyx_v_rc != 0);
   if (__pyx_t_4) {
@@ -3744,7 +3744,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_bind(PyObject *__pyx_v_self, PyObje
  *         rc = zmq_bind(self.handle, addr)
  *         if rc != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def bind_to_random_port(self, addr, min_port=2000, max_port=20000, max_tries=100):
  */
     __pyx_t_2 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 557; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -3776,10 +3776,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_bind(PyObject *__pyx_v_self, PyObje
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":559
  *             raise ZMQError()
- * 
+ *
  *     def bind_to_random_port(self, addr, min_port=2000, max_port=20000, max_tries=100):             # <<<<<<<<<<<<<<
  *         """Bind this socket to a random port in a range.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_bind_to_random_port(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -3992,7 +3992,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_bind_to_random_port(PyObject *__pyx
  *             else:
  *                 return port             # <<<<<<<<<<<<<<
  *         raise ZMQBindError("Could not bind socket to random port.")
- * 
+ *
  */
         __Pyx_XDECREF(__pyx_r);
         __Pyx_INCREF(__pyx_v_port);
@@ -4050,7 +4050,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_bind_to_random_port(PyObject *__pyx
  *             else:
  *                 return port
  *         raise ZMQBindError("Could not bind socket to random port.")             # <<<<<<<<<<<<<<
- * 
+ *
  *     def connect(self, addr):
  */
   __pyx_t_2 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQBindError); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 586; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -4092,10 +4092,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_bind_to_random_port(PyObject *__pyx
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":588
  *         raise ZMQBindError("Could not bind socket to random port.")
- * 
+ *
  *     def connect(self, addr):             # <<<<<<<<<<<<<<
  *         """Connect to a remote 0MQ socket.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_connect(PyObject *__pyx_v_self, PyObject *__pyx_v_addr); /*proto*/
@@ -4114,9 +4114,9 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_connect(PyObject *__pyx_v_self, PyO
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":600
  *         cdef int rc
- * 
+ *
  *         self._check_closed()             # <<<<<<<<<<<<<<
- * 
+ *
  *         if not isinstance(addr, str):
  */
   __pyx_t_1 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s___check_closed); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -4128,17 +4128,17 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_connect(PyObject *__pyx_v_self, PyO
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":602
  *         self._check_closed()
- * 
+ *
  *         if not isinstance(addr, str):             # <<<<<<<<<<<<<<
  *             raise TypeError('expected str, got: %r' % addr)
  *         rc = zmq_connect(self.handle, addr)
  */
-  __pyx_t_3 = PyObject_TypeCheck(__pyx_v_addr, ((PyTypeObject *)((PyObject*)&PyString_Type))); 
+  __pyx_t_3 = PyObject_TypeCheck(__pyx_v_addr, ((PyTypeObject *)((PyObject*)&PyString_Type)));
   __pyx_t_4 = (!__pyx_t_3);
   if (__pyx_t_4) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":603
- * 
+ *
  *         if not isinstance(addr, str):
  *             raise TypeError('expected str, got: %r' % addr)             # <<<<<<<<<<<<<<
  *         rc = zmq_connect(self.handle, addr)
@@ -4176,7 +4176,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_connect(PyObject *__pyx_v_self, PyO
  *         rc = zmq_connect(self.handle, addr)
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
   __pyx_t_4 = (__pyx_v_rc != 0);
   if (__pyx_t_4) {
@@ -4185,7 +4185,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_connect(PyObject *__pyx_v_self, PyO
  *         rc = zmq_connect(self.handle, addr)
  *         if rc != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     #-------------------------------------------------------------------------
  */
     __pyx_t_2 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 606; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -4217,10 +4217,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_connect(PyObject *__pyx_v_self, PyO
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":612
  *     #-------------------------------------------------------------------------
- * 
+ *
  *     def send(self, object data, int flags=0, bool copy=True):             # <<<<<<<<<<<<<<
  *         """Send a message on this socket.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -4319,7 +4319,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send(PyObject *__pyx_v_self, PyObje
  *             return self._send_message(data, flags)
  *         elif copy:
  */
-  __pyx_t_3 = PyObject_TypeCheck(__pyx_v_data, ((PyTypeObject *)((PyObject*)__pyx_ptype_3zmq_4_zmq_Message))); 
+  __pyx_t_3 = PyObject_TypeCheck(__pyx_v_data, ((PyTypeObject *)((PyObject*)__pyx_ptype_3zmq_4_zmq_Message)));
   if (__pyx_t_3) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":632
@@ -4417,7 +4417,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send(PyObject *__pyx_v_self, PyObje
  *             msg = Message(data)
  *             return self._send_message(msg, flags)             # <<<<<<<<<<<<<<
  *             # return self._send_nocopy(msg, flags)
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_2 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s___send_message); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 639; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -4462,7 +4462,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send(PyObject *__pyx_v_self, PyObje
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":642
  *             # return self._send_nocopy(msg, flags)
- * 
+ *
  *     def _send_message(self, Message msg, int flags=0):             # <<<<<<<<<<<<<<
  *         """Send a Message on this socket in a non-copy manner."""
  *         cdef int rc
@@ -4549,7 +4549,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_message(PyObject *__pyx_v_sel
  *         # msg_copy = copy_mod.copy(msg)
  *         with nogil:             # <<<<<<<<<<<<<<
  *             rc = zmq_send(self.handle, &msg.zmq_msg, flags)
- * 
+ *
  */
   { PyThreadState *_save;
     Py_UNBLOCK_THREADS
@@ -4559,7 +4559,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_message(PyObject *__pyx_v_sel
  *         # msg_copy = copy_mod.copy(msg)
  *         with nogil:
  *             rc = zmq_send(self.handle, &msg.zmq_msg, flags)             # <<<<<<<<<<<<<<
- * 
+ *
  *         if rc != 0:
  */
       __pyx_v_rc = zmq_send(((struct __pyx_obj_3zmq_4_zmq_Socket *)__pyx_v_self)->handle, (&__pyx_v_msg->zmq_msg), __pyx_v_flags);
@@ -4571,7 +4571,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_message(PyObject *__pyx_v_sel
  *         # msg_copy = copy_mod.copy(msg)
  *         with nogil:             # <<<<<<<<<<<<<<
  *             rc = zmq_send(self.handle, &msg.zmq_msg, flags)
- * 
+ *
  */
       Py_BLOCK_THREADS
     }
@@ -4579,19 +4579,19 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_message(PyObject *__pyx_v_sel
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":654
  *             rc = zmq_send(self.handle, &msg.zmq_msg, flags)
- * 
+ *
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
   __pyx_t_2 = (__pyx_v_rc != 0);
   if (__pyx_t_2) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":655
- * 
+ *
  *         if rc != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _send_copy(self, object msg, int flags=0):
  */
     __pyx_t_1 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 655; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -4624,7 +4624,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_message(PyObject *__pyx_v_sel
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":657
  *             raise ZMQError()
- * 
+ *
  *     def _send_copy(self, object msg, int flags=0):             # <<<<<<<<<<<<<<
  *         """Send a message on this socket by copying its content."""
  *         cdef int rc, rc2
@@ -4698,20 +4698,20 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_copy(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":664
  *         cdef Py_ssize_t msg_c_len
- * 
+ *
  *         if not isinstance(msg, str):             # <<<<<<<<<<<<<<
  *             raise TypeError('expected str, got: %r' % msg)
- * 
+ *
  */
-  __pyx_t_1 = PyObject_TypeCheck(__pyx_v_msg, ((PyTypeObject *)((PyObject*)&PyString_Type))); 
+  __pyx_t_1 = PyObject_TypeCheck(__pyx_v_msg, ((PyTypeObject *)((PyObject*)&PyString_Type)));
   __pyx_t_2 = (!__pyx_t_1);
   if (__pyx_t_2) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":665
- * 
+ *
  *         if not isinstance(msg, str):
  *             raise TypeError('expected str, got: %r' % msg)             # <<<<<<<<<<<<<<
- * 
+ *
  *         PyString_AsStringAndSize(msg, &msg_c, &msg_c_len)
  */
     __pyx_t_3 = PyNumber_Remainder(((PyObject *)__pyx_kp_s_1), __pyx_v_msg); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 665; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -4733,7 +4733,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_copy(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":667
  *             raise TypeError('expected str, got: %r' % msg)
- * 
+ *
  *         PyString_AsStringAndSize(msg, &msg_c, &msg_c_len)             # <<<<<<<<<<<<<<
  *         # Copy the msg before sending. This avoids any complications with
  *         # the GIL, etc.
@@ -4745,7 +4745,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_copy(PyObject *__pyx_v_self, 
  *         # If zmq_msg_init_* fails do we need to call zmq_msg_close?
  *         rc = zmq_msg_init_size(&data, msg_c_len)             # <<<<<<<<<<<<<<
  *         memcpy(zmq_msg_data(&data), msg_c, zmq_msg_size(&data))
- * 
+ *
  */
   __pyx_v_rc = zmq_msg_init_size((&__pyx_v_data), __pyx_v_msg_c_len);
 
@@ -4753,26 +4753,26 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_copy(PyObject *__pyx_v_self, 
  *         # If zmq_msg_init_* fails do we need to call zmq_msg_close?
  *         rc = zmq_msg_init_size(&data, msg_c_len)
  *         memcpy(zmq_msg_data(&data), msg_c, zmq_msg_size(&data))             # <<<<<<<<<<<<<<
- * 
+ *
  *         if rc != 0:
  */
   memcpy(zmq_msg_data((&__pyx_v_data)), __pyx_v_msg_c, zmq_msg_size((&__pyx_v_data)));
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":674
  *         memcpy(zmq_msg_data(&data), msg_c, zmq_msg_size(&data))
- * 
+ *
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
   __pyx_t_2 = (__pyx_v_rc != 0);
   if (__pyx_t_2) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":675
- * 
+ *
  *         if rc != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *         with nogil:
  */
     __pyx_t_3 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 675; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -4789,7 +4789,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_copy(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":677
  *             raise ZMQError()
- * 
+ *
  *         with nogil:             # <<<<<<<<<<<<<<
  *             rc = zmq_send(self.handle, &data, flags)
  *         rc2 = zmq_msg_close(&data)
@@ -4799,11 +4799,11 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_copy(PyObject *__pyx_v_self, 
     /*try:*/ {
 
       /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":678
- * 
+ *
  *         with nogil:
  *             rc = zmq_send(self.handle, &data, flags)             # <<<<<<<<<<<<<<
  *         rc2 = zmq_msg_close(&data)
- * 
+ *
  */
       __pyx_v_rc = zmq_send(((struct __pyx_obj_3zmq_4_zmq_Socket *)__pyx_v_self)->handle, (&__pyx_v_data), __pyx_v_flags);
     }
@@ -4811,7 +4811,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_copy(PyObject *__pyx_v_self, 
 
       /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":677
  *             raise ZMQError()
- * 
+ *
  *         with nogil:             # <<<<<<<<<<<<<<
  *             rc = zmq_send(self.handle, &data, flags)
  *         rc2 = zmq_msg_close(&data)
@@ -4824,7 +4824,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_copy(PyObject *__pyx_v_self, 
  *         with nogil:
  *             rc = zmq_send(self.handle, &data, flags)
  *         rc2 = zmq_msg_close(&data)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Shouldn't the error handling for zmq_msg_close come after that
  */
   __pyx_v_rc2 = zmq_msg_close((&__pyx_v_data));
@@ -4834,7 +4834,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_copy(PyObject *__pyx_v_self, 
  *         # of zmq_send?
  *         if rc2 != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
   __pyx_t_2 = (__pyx_v_rc2 != 0);
   if (__pyx_t_2) {
@@ -4843,7 +4843,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_copy(PyObject *__pyx_v_self, 
  *         # of zmq_send?
  *         if rc2 != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *         if rc != 0:
  */
     __pyx_t_4 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 684; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -4860,19 +4860,19 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_copy(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":686
  *             raise ZMQError()
- * 
+ *
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
   __pyx_t_2 = (__pyx_v_rc != 0);
   if (__pyx_t_2) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":687
- * 
+ *
  *         if rc != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _send_nocopy(self, object msg, int flags=0):
  */
     __pyx_t_3 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 687; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -4904,10 +4904,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_copy(PyObject *__pyx_v_self, 
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":689
  *             raise ZMQError()
- * 
+ *
  *     def _send_nocopy(self, object msg, int flags=0):             # <<<<<<<<<<<<<<
  *         """Send a Python string on this socket in a non-copy manner.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -4977,20 +4977,20 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":701
  *         cdef Py_ssize_t msg_c_len
- * 
+ *
  *         if not isinstance(msg, str):             # <<<<<<<<<<<<<<
  *             raise TypeError('expected str, got: %r' % msg)
- * 
+ *
  */
-  __pyx_t_1 = PyObject_TypeCheck(__pyx_v_msg, ((PyTypeObject *)((PyObject*)&PyString_Type))); 
+  __pyx_t_1 = PyObject_TypeCheck(__pyx_v_msg, ((PyTypeObject *)((PyObject*)&PyString_Type)));
   __pyx_t_2 = (!__pyx_t_1);
   if (__pyx_t_2) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":702
- * 
+ *
  *         if not isinstance(msg, str):
  *             raise TypeError('expected str, got: %r' % msg)             # <<<<<<<<<<<<<<
- * 
+ *
  *         PyString_AsStringAndSize(msg, &msg_c, &msg_c_len)
  */
     __pyx_t_3 = PyNumber_Remainder(((PyObject *)__pyx_kp_s_1), __pyx_v_msg); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 702; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -5012,7 +5012,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":704
  *             raise TypeError('expected str, got: %r' % msg)
- * 
+ *
  *         PyString_AsStringAndSize(msg, &msg_c, &msg_c_len)             # <<<<<<<<<<<<<<
  *         Py_INCREF(msg) # We INCREF to prevent Python from gc'ing msg
  *         rc = zmq_msg_init_data(
@@ -5020,7 +5020,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
   __pyx_t_5 = PyString_AsStringAndSize(__pyx_v_msg, (&__pyx_v_msg_c), (&__pyx_v_msg_c_len)); if (unlikely(__pyx_t_5 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 704; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":705
- * 
+ *
  *         PyString_AsStringAndSize(msg, &msg_c, &msg_c_len)
  *         Py_INCREF(msg) # We INCREF to prevent Python from gc'ing msg             # <<<<<<<<<<<<<<
  *         rc = zmq_msg_init_data(
@@ -5032,14 +5032,14 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
  *             &data, <void *>msg_c, msg_c_len,
  *             <zmq_free_fn *>free_python_msg, <void *>msg
  *         )             # <<<<<<<<<<<<<<
- * 
+ *
  *         if rc != 0:
  */
   __pyx_v_rc = zmq_msg_init_data((&__pyx_v_data), ((void *)__pyx_v_msg_c), __pyx_v_msg_c_len, ((zmq_free_fn *)__pyx_f_3zmq_4_zmq_free_python_msg), ((void *)__pyx_v_msg));
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":711
  *         )
- * 
+ *
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             # If zmq_msg_init_data fails it does not call zmq_free_fn,
  *             # so we Py_DECREF.
@@ -5052,7 +5052,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
  *             # so we Py_DECREF.
  *             Py_DECREF(msg)             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
     Py_DECREF(__pyx_v_msg);
 
@@ -5060,7 +5060,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
  *             # so we Py_DECREF.
  *             Py_DECREF(msg)
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *         with nogil:
  */
     __pyx_t_3 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 715; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -5077,20 +5077,20 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":717
  *             raise ZMQError()
- * 
+ *
  *         with nogil:             # <<<<<<<<<<<<<<
  *             rc = zmq_send(self.handle, &data, flags)
- * 
+ *
  */
   { PyThreadState *_save;
     Py_UNBLOCK_THREADS
     /*try:*/ {
 
       /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":718
- * 
+ *
  *         with nogil:
  *             rc = zmq_send(self.handle, &data, flags)             # <<<<<<<<<<<<<<
- * 
+ *
  *         if rc != 0:
  */
       __pyx_v_rc = zmq_send(((struct __pyx_obj_3zmq_4_zmq_Socket *)__pyx_v_self)->handle, (&__pyx_v_data), __pyx_v_flags);
@@ -5099,10 +5099,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
 
       /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":717
  *             raise ZMQError()
- * 
+ *
  *         with nogil:             # <<<<<<<<<<<<<<
  *             rc = zmq_send(self.handle, &data, flags)
- * 
+ *
  */
       Py_BLOCK_THREADS
     }
@@ -5110,7 +5110,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":720
  *             rc = zmq_send(self.handle, &data, flags)
- * 
+ *
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             # If zmq_send fails it does not call zmq_free_fn, so we Py_DECREF.
  *             Py_DECREF(msg)
@@ -5132,7 +5132,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
  *             Py_DECREF(msg)
  *             zmq_msg_close(&data)             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
     zmq_msg_close((&__pyx_v_data));
 
@@ -5140,7 +5140,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
  *             Py_DECREF(msg)
  *             zmq_msg_close(&data)
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *         rc = zmq_msg_close(&data)
  */
     __pyx_t_4 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 724; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -5157,7 +5157,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":726
  *             raise ZMQError()
- * 
+ *
  *         rc = zmq_msg_close(&data)             # <<<<<<<<<<<<<<
  *         if rc != 0:
  *             raise ZMQError()
@@ -5165,11 +5165,11 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
   __pyx_v_rc = zmq_msg_close((&__pyx_v_data));
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":727
- * 
+ *
  *         rc = zmq_msg_close(&data)
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
   __pyx_t_2 = (__pyx_v_rc != 0);
   if (__pyx_t_2) {
@@ -5178,7 +5178,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
  *         rc = zmq_msg_close(&data)
  *         if rc != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def recv(self, int flags=0, copy=True):
  */
     __pyx_t_3 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 728; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -5210,10 +5210,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__send_nocopy(PyObject *__pyx_v_self
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":730
  *             raise ZMQError()
- * 
+ *
  *     def recv(self, int flags=0, copy=True):             # <<<<<<<<<<<<<<
  *         """Receive a message.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -5335,7 +5335,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv(PyObject *__pyx_v_self, PyObje
  *             return self._recv_copy(flags)
  *         else:
  *             return self._recv_message(flags)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _recv_message(self, int flags=0):
  */
     __Pyx_XDECREF(__pyx_r);
@@ -5376,7 +5376,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv(PyObject *__pyx_v_self, PyObje
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":756
  *             return self._recv_message(flags)
- * 
+ *
  *     def _recv_message(self, int flags=0):             # <<<<<<<<<<<<<<
  *         """Receive a message in a non-copying manner and return a Message."""
  *         cdef int rc
@@ -5439,7 +5439,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_message(PyObject *__pyx_v_sel
  *         cdef int rc
  *         cdef Message msg
  *         msg = Message()             # <<<<<<<<<<<<<<
- * 
+ *
  *         with nogil:
  */
   __pyx_t_1 = PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_3zmq_4_zmq_Message)), ((PyObject *)__pyx_empty_tuple), NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 760; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -5450,20 +5450,20 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_message(PyObject *__pyx_v_sel
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":762
  *         msg = Message()
- * 
+ *
  *         with nogil:             # <<<<<<<<<<<<<<
  *             rc = zmq_recv(self.handle, &msg.zmq_msg, flags)
- * 
+ *
  */
   { PyThreadState *_save;
     Py_UNBLOCK_THREADS
     /*try:*/ {
 
       /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":763
- * 
+ *
  *         with nogil:
  *             rc = zmq_recv(self.handle, &msg.zmq_msg, flags)             # <<<<<<<<<<<<<<
- * 
+ *
  *         if rc != 0:
  */
       __pyx_v_rc = zmq_recv(((struct __pyx_obj_3zmq_4_zmq_Socket *)__pyx_v_self)->handle, (&__pyx_v_msg->zmq_msg), __pyx_v_flags);
@@ -5472,10 +5472,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_message(PyObject *__pyx_v_sel
 
       /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":762
  *         msg = Message()
- * 
+ *
  *         with nogil:             # <<<<<<<<<<<<<<
  *             rc = zmq_recv(self.handle, &msg.zmq_msg, flags)
- * 
+ *
  */
       Py_BLOCK_THREADS
     }
@@ -5483,7 +5483,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_message(PyObject *__pyx_v_sel
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":765
  *             rc = zmq_recv(self.handle, &msg.zmq_msg, flags)
- * 
+ *
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
  *         return msg
@@ -5492,11 +5492,11 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_message(PyObject *__pyx_v_sel
   if (__pyx_t_2) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":766
- * 
+ *
  *         if rc != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
  *         return msg
- * 
+ *
  */
     __pyx_t_1 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 766; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
@@ -5514,7 +5514,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_message(PyObject *__pyx_v_sel
  *         if rc != 0:
  *             raise ZMQError()
  *         return msg             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _recv_copy(self, int flags=0):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5539,7 +5539,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_message(PyObject *__pyx_v_sel
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":769
  *         return msg
- * 
+ *
  *     def _recv_copy(self, int flags=0):             # <<<<<<<<<<<<<<
  *         """Receive a message in a copying manner as a string."""
  *         cdef int rc
@@ -5601,7 +5601,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_copy(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":774
  *         cdef zmq_msg_t data
- * 
+ *
  *         rc = zmq_msg_init(&data)             # <<<<<<<<<<<<<<
  *         if rc != 0:
  *             raise ZMQError()
@@ -5609,11 +5609,11 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_copy(PyObject *__pyx_v_self, 
   __pyx_v_rc = zmq_msg_init((&__pyx_v_data));
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":775
- * 
+ *
  *         rc = zmq_msg_init(&data)
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
   __pyx_t_1 = (__pyx_v_rc != 0);
   if (__pyx_t_1) {
@@ -5622,7 +5622,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_copy(PyObject *__pyx_v_self, 
  *         rc = zmq_msg_init(&data)
  *         if rc != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *         with nogil:
  */
     __pyx_t_2 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 776; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -5639,20 +5639,20 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_copy(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":778
  *             raise ZMQError()
- * 
+ *
  *         with nogil:             # <<<<<<<<<<<<<<
  *             rc = zmq_recv(self.handle, &data, flags)
- * 
+ *
  */
   { PyThreadState *_save;
     Py_UNBLOCK_THREADS
     /*try:*/ {
 
       /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":779
- * 
+ *
  *         with nogil:
  *             rc = zmq_recv(self.handle, &data, flags)             # <<<<<<<<<<<<<<
- * 
+ *
  *         if rc != 0:
  */
       __pyx_v_rc = zmq_recv(((struct __pyx_obj_3zmq_4_zmq_Socket *)__pyx_v_self)->handle, (&__pyx_v_data), __pyx_v_flags);
@@ -5661,10 +5661,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_copy(PyObject *__pyx_v_self, 
 
       /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":778
  *             raise ZMQError()
- * 
+ *
  *         with nogil:             # <<<<<<<<<<<<<<
  *             rc = zmq_recv(self.handle, &data, flags)
- * 
+ *
  */
       Py_BLOCK_THREADS
     }
@@ -5672,19 +5672,19 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_copy(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":781
  *             rc = zmq_recv(self.handle, &data, flags)
- * 
+ *
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
- * 
+ *
  */
   __pyx_t_1 = (__pyx_v_rc != 0);
   if (__pyx_t_1) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":782
- * 
+ *
  *         if rc != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *         try:
  */
     __pyx_t_3 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 782; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -5701,7 +5701,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_copy(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":784
  *             raise ZMQError()
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             msg = PyString_FromStringAndSize(
  *                 <char *>zmq_msg_data(&data),
@@ -5741,7 +5741,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_copy(PyObject *__pyx_v_self, 
  *             )
  *         finally:
  *             rc = zmq_msg_close(&data)             # <<<<<<<<<<<<<<
- * 
+ *
  *         if rc != 0:
  */
     __pyx_v_rc = zmq_msg_close((&__pyx_v_data));
@@ -5759,7 +5759,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_copy(PyObject *__pyx_v_self, 
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":792
  *             rc = zmq_msg_close(&data)
- * 
+ *
  *         if rc != 0:             # <<<<<<<<<<<<<<
  *             raise ZMQError()
  *         return msg
@@ -5768,11 +5768,11 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_copy(PyObject *__pyx_v_self, 
   if (__pyx_t_1) {
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":793
- * 
+ *
  *         if rc != 0:
  *             raise ZMQError()             # <<<<<<<<<<<<<<
  *         return msg
- * 
+ *
  */
     __pyx_t_2 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 793; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
@@ -5790,7 +5790,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_copy(PyObject *__pyx_v_self, 
  *         if rc != 0:
  *             raise ZMQError()
  *         return msg             # <<<<<<<<<<<<<<
- * 
+ *
  *     def send_multipart(self, msg_parts, int flags=0, copy=True):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5815,10 +5815,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket__recv_copy(PyObject *__pyx_v_self, 
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":796
  *         return msg
- * 
+ *
  *     def send_multipart(self, msg_parts, int flags=0, copy=True):             # <<<<<<<<<<<<<<
  *         """Send a sequence of messages as a multipart message.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send_multipart(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -5973,7 +5973,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send_multipart(PyObject *__pyx_v_se
  *             self.send(msg, SNDMORE|flags, copy=copy)
  *         # Send the last part without the SNDMORE flag.
  *         self.send(msg_parts[-1], flags)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def recv_multipart(self, int flags=0, copy=True):
  */
   __pyx_t_3 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s__send); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 810; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -6018,10 +6018,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send_multipart(PyObject *__pyx_v_se
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":812
  *         self.send(msg_parts[-1], flags)
- * 
+ *
  *     def recv_multipart(self, int flags=0, copy=True):             # <<<<<<<<<<<<<<
  *         """Receive a multipart message as a list of messages.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv_multipart(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -6188,7 +6188,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv_multipart(PyObject *__pyx_v_se
  *             else:
  *                 break             # <<<<<<<<<<<<<<
  *         return parts
- * 
+ *
  */
       goto __pyx_L7_break;
     }
@@ -6201,7 +6201,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv_multipart(PyObject *__pyx_v_se
  *             else:
  *                 break
  *         return parts             # <<<<<<<<<<<<<<
- * 
+ *
  *     def rcvmore(self):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6230,7 +6230,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv_multipart(PyObject *__pyx_v_se
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":837
  *         return parts
- * 
+ *
  *     def rcvmore(self):             # <<<<<<<<<<<<<<
  *         """Are there more parts to a multipart message."""
  *         more = self.getsockopt(RCVMORE)
@@ -6252,7 +6252,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_rcvmore(PyObject *__pyx_v_self, PyO
  *         """Are there more parts to a multipart message."""
  *         more = self.getsockopt(RCVMORE)             # <<<<<<<<<<<<<<
  *         return bool(more)
- * 
+ *
  */
   __pyx_t_1 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s__getsockopt); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 839; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
@@ -6275,7 +6275,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_rcvmore(PyObject *__pyx_v_self, PyO
  *         """Are there more parts to a multipart message."""
  *         more = self.getsockopt(RCVMORE)
  *         return bool(more)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def send_pyobj(self, obj, flags=0, protocol=-1):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6308,10 +6308,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_rcvmore(PyObject *__pyx_v_self, PyO
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":842
  *         return bool(more)
- * 
+ *
  *     def send_pyobj(self, obj, flags=0, protocol=-1):             # <<<<<<<<<<<<<<
  *         """Send a Python object as a message using pickle to serialize.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send_pyobj(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -6386,7 +6386,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send_pyobj(PyObject *__pyx_v_self, 
  *         """
  *         msg = pickle.dumps(obj, protocol)             # <<<<<<<<<<<<<<
  *         return self.send(msg, flags)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_GetName(__pyx_m, __pyx_n_s__pickle); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 856; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
@@ -6413,7 +6413,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send_pyobj(PyObject *__pyx_v_self, 
  *         """
  *         msg = pickle.dumps(obj, protocol)
  *         return self.send(msg, flags)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def recv_pyobj(self, flags=0):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6452,10 +6452,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send_pyobj(PyObject *__pyx_v_self, 
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":859
  *         return self.send(msg, flags)
- * 
+ *
  *     def recv_pyobj(self, flags=0):             # <<<<<<<<<<<<<<
  *         """Receive a Python object as a message using pickle to serialize.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv_pyobj(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -6511,7 +6511,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv_pyobj(PyObject *__pyx_v_self, 
  *         """
  *         s = self.recv(flags)             # <<<<<<<<<<<<<<
  *         return pickle.loads(s)
- * 
+ *
  */
   __pyx_t_1 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s__recv); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 872; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
@@ -6532,7 +6532,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv_pyobj(PyObject *__pyx_v_self, 
  *         """
  *         s = self.recv(flags)
  *         return pickle.loads(s)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def send_json(self, obj, flags=0):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6571,10 +6571,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv_pyobj(PyObject *__pyx_v_self, 
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":875
  *         return pickle.loads(s)
- * 
+ *
  *     def send_json(self, obj, flags=0):             # <<<<<<<<<<<<<<
  *         """Send a Python object as a message using json to serialize.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send_json(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -6678,7 +6678,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send_json(PyObject *__pyx_v_self, P
  *         else:
  *             msg = json.dumps(obj, separators=(',',':'))             # <<<<<<<<<<<<<<
  *             return self.send(msg, flags)
- * 
+ *
  */
     __pyx_t_3 = __Pyx_GetName(__pyx_m, __pyx_n_s__json); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 888; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
@@ -6715,7 +6715,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send_json(PyObject *__pyx_v_self, P
  *         else:
  *             msg = json.dumps(obj, separators=(',',':'))
  *             return self.send(msg, flags)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def recv_json(self, flags=0):
  */
     __Pyx_XDECREF(__pyx_r);
@@ -6760,10 +6760,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_send_json(PyObject *__pyx_v_self, P
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":891
  *             return self.send(msg, flags)
- * 
+ *
  *     def recv_json(self, flags=0):             # <<<<<<<<<<<<<<
  *         """Receive a Python object as a message using json to serialize.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv_json(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -6857,7 +6857,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv_json(PyObject *__pyx_v_self, P
  *         else:
  *             msg = self.recv(flags)             # <<<<<<<<<<<<<<
  *             return json.loads(msg)
- * 
+ *
  */
     __pyx_t_3 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s__recv); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 907; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
@@ -6878,8 +6878,8 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv_json(PyObject *__pyx_v_self, P
  *         else:
  *             msg = self.recv(flags)
  *             return json.loads(msg)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_4 = __Pyx_GetName(__pyx_m, __pyx_n_s__json); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 908; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -6920,11 +6920,11 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Socket_recv_json(PyObject *__pyx_v_self, P
 }
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":943
- * 
- * 
+ *
+ *
  * def _poll(sockets, long timeout=-1):             # <<<<<<<<<<<<<<
  *     """Poll a set of 0MQ sockets, native file descs. or sockets.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -7035,7 +7035,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
  *     cdef int nsockets = len(sockets)
  *     cdef Socket current_socket
  *     pollitems_o = allocate(nsockets*sizeof(zmq_pollitem_t),<void**>&pollitems)             # <<<<<<<<<<<<<<
- * 
+ *
  *     for i in range(nsockets):
  */
   __pyx_t_2 = __pyx_f_3zmq_4_zmq_allocate((__pyx_v_nsockets * (sizeof(zmq_pollitem_t))), ((void **)(&__pyx_v_pollitems))); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 961; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -7046,7 +7046,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":963
  *     pollitems_o = allocate(nsockets*sizeof(zmq_pollitem_t),<void**>&pollitems)
- * 
+ *
  *     for i in range(nsockets):             # <<<<<<<<<<<<<<
  *         s = sockets[i][0]
  *         events = sockets[i][1]
@@ -7056,7 +7056,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
     __pyx_v_i = __pyx_t_4;
 
     /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":964
- * 
+ *
  *     for i in range(nsockets):
  *         s = sockets[i][0]             # <<<<<<<<<<<<<<
  *         events = sockets[i][1]
@@ -7094,7 +7094,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
  *             current_socket = s
  *             pollitems[i].socket = current_socket.handle
  */
-    __pyx_t_6 = PyObject_TypeCheck(__pyx_v_s, ((PyTypeObject *)((PyObject*)__pyx_ptype_3zmq_4_zmq_Socket))); 
+    __pyx_t_6 = PyObject_TypeCheck(__pyx_v_s, ((PyTypeObject *)((PyObject*)__pyx_ptype_3zmq_4_zmq_Socket)));
     if (__pyx_t_6) {
 
       /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":967
@@ -7146,7 +7146,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
  *             pollitems[i].socket = NULL
  *             pollitems[i].fd = s
  */
-    __pyx_t_6 = PyObject_TypeCheck(__pyx_v_s, ((PyTypeObject *)((PyObject*)&PyInt_Type))); 
+    __pyx_t_6 = PyObject_TypeCheck(__pyx_v_s, ((PyTypeObject *)((PyObject*)&PyInt_Type)));
     if (__pyx_t_6) {
 
       /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":972
@@ -7344,7 +7344,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
  *                 "Socket must be a 0MQ socket, an integer fd or have "
  *                 "a fileno() method: %r" % s
  *             )             # <<<<<<<<<<<<<<
- * 
+ *
  *     # int zmq_poll (zmq_pollitem_t *items, int nitems, long timeout)
  */
       __pyx_t_9 = PyNumber_Remainder(((PyObject *)__pyx_kp_s_13), __pyx_v_s); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 989; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -7365,7 +7365,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
   }
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":993
- * 
+ *
  *     # int zmq_poll (zmq_pollitem_t *items, int nitems, long timeout)
  *     with nogil:             # <<<<<<<<<<<<<<
  *         rc = zmq_poll(pollitems, nsockets, timeout)
@@ -7387,7 +7387,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
     /*finally:*/ {
 
       /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":993
- * 
+ *
  *     # int zmq_poll (zmq_pollitem_t *items, int nitems, long timeout)
  *     with nogil:             # <<<<<<<<<<<<<<
  *         rc = zmq_poll(pollitems, nsockets, timeout)
@@ -7402,7 +7402,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
  *         rc = zmq_poll(pollitems, nsockets, timeout)
  *     if rc == -1:             # <<<<<<<<<<<<<<
  *         raise ZMQError()
- * 
+ *
  */
   __pyx_t_6 = (__pyx_v_rc == -1);
   if (__pyx_t_6) {
@@ -7411,7 +7411,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
  *         rc = zmq_poll(pollitems, nsockets, timeout)
  *     if rc == -1:
  *         raise ZMQError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     results = []
  */
     __pyx_t_9 = __Pyx_GetName(__pyx_m, __pyx_n_s__ZMQError); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 996; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -7428,7 +7428,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":998
  *         raise ZMQError()
- * 
+ *
  *     results = []             # <<<<<<<<<<<<<<
  *     for i in range(nsockets):
  *         s = sockets[i][0]
@@ -7440,7 +7440,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
   __pyx_t_2 = 0;
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":999
- * 
+ *
  *     results = []
  *     for i in range(nsockets):             # <<<<<<<<<<<<<<
  *         s = sockets[i][0]
@@ -7513,7 +7513,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
  *         # Only return sockets with non-zero status for compat. with select.poll.
  *         if revents > 0:             # <<<<<<<<<<<<<<
  *             results.append((s, revents))
- * 
+ *
  */
     __pyx_t_2 = PyObject_RichCompare(__pyx_v_revents, __pyx_int_0, Py_GT); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1006; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
@@ -7525,7 +7525,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
  *         # Only return sockets with non-zero status for compat. with select.poll.
  *         if revents > 0:
  *             results.append((s, revents))             # <<<<<<<<<<<<<<
- * 
+ *
  *     return results
  */
       __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1007; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -7547,10 +7547,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1009
  *             results.append((s, revents))
- * 
+ *
  *     return results             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_results);
@@ -7583,10 +7583,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq__poll(PyObject *__pyx_self, PyObject *__pyx
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1015
  *     """An stateful poll interface that mirrors Python's built-in poll."""
- * 
+ *
  *     def __init__(self):             # <<<<<<<<<<<<<<
  *         self.sockets = {}
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Poller___init__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
@@ -7598,10 +7598,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Poller___init__(PyObject *__pyx_self, PyOb
   __pyx_self = __pyx_self;
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1016
- * 
+ *
  *     def __init__(self):
  *         self.sockets = {}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def register(self, socket, flags=POLLIN|POLLOUT):
  */
   __pyx_t_1 = PyDict_New(); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1016; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -7623,10 +7623,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Poller___init__(PyObject *__pyx_self, PyOb
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1018
  *         self.sockets = {}
- * 
+ *
  *     def register(self, socket, flags=POLLIN|POLLOUT):             # <<<<<<<<<<<<<<
  *         """Register a 0MQ socket or native fd for I/O monitoring.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Poller_register(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -7699,7 +7699,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Poller_register(PyObject *__pyx_self, PyOb
  *             The events to watch for.  Can be POLLIN, POLLOUT or POLLIN|POLLOUT.
  *         """
  *         self.sockets[socket] = flags             # <<<<<<<<<<<<<<
- * 
+ *
  *     def modify(self, socket, flags=POLLIN|POLLOUT):
  */
   __pyx_t_1 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s__sockets); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1029; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -7721,7 +7721,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Poller_register(PyObject *__pyx_self, PyOb
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1031
  *         self.sockets[socket] = flags
- * 
+ *
  *     def modify(self, socket, flags=POLLIN|POLLOUT):             # <<<<<<<<<<<<<<
  *         """Modify the flags for an already registered 0MQ socket or native fd."""
  *         self.register(socket, flags)
@@ -7799,7 +7799,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Poller_modify(PyObject *__pyx_self, PyObje
  *     def modify(self, socket, flags=POLLIN|POLLOUT):
  *         """Modify the flags for an already registered 0MQ socket or native fd."""
  *         self.register(socket, flags)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def unregister(self, socket):
  */
   __pyx_t_1 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s__register); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -7834,10 +7834,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Poller_modify(PyObject *__pyx_self, PyObje
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1035
  *         self.register(socket, flags)
- * 
+ *
  *     def unregister(self, socket):             # <<<<<<<<<<<<<<
  *         """Remove a 0MQ socket or native fd for I/O monitoring.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Poller_unregister(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -7895,7 +7895,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Poller_unregister(PyObject *__pyx_self, Py
  *             The socket instance to stop polling.
  *         """
  *         del self.sockets[socket]             # <<<<<<<<<<<<<<
- * 
+ *
  *     def poll(self, timeout=None):
  */
   __pyx_t_1 = PyObject_GetAttr(__pyx_v_self, __pyx_n_s__sockets); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1043; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -7917,10 +7917,10 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Poller_unregister(PyObject *__pyx_self, Py
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1045
  *         del self.sockets[socket]
- * 
+ *
  *     def poll(self, timeout=None):             # <<<<<<<<<<<<<<
  *         """Poll the registered 0MQ or native fds for I/O.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_6Poller_poll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -8049,7 +8049,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Poller_poll(PyObject *__pyx_self, PyObject
  *         if timeout < 0:
  *             timeout = -1             # <<<<<<<<<<<<<<
  *         return _poll(self.sockets.items(), timeout=timeout)
- * 
+ *
  */
     __Pyx_INCREF(__pyx_int_neg_1);
     __Pyx_DECREF(__pyx_v_timeout);
@@ -8062,8 +8062,8 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Poller_poll(PyObject *__pyx_self, PyObject
  *         if timeout < 0:
  *             timeout = -1
  *         return _poll(self.sockets.items(), timeout=timeout)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = __Pyx_GetName(__pyx_m, __pyx_n_s___poll); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1062; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -8111,11 +8111,11 @@ static PyObject *__pyx_pf_3zmq_4_zmq_6Poller_poll(PyObject *__pyx_self, PyObject
 }
 
 /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1065
- * 
- * 
+ *
+ *
  * def select(rlist, wlist, xlist, timeout=None):             # <<<<<<<<<<<<<<
  *     """Return the result of poll as a lists of sockets ready for r/w.
- * 
+ *
  */
 
 static PyObject *__pyx_pf_3zmq_4_zmq_select(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -8641,7 +8641,7 @@ static PyObject *__pyx_pf_3zmq_4_zmq_select(PyObject *__pyx_self, PyObject *__py
  *         if flags & POLLERR:
  *             xlist.append(s)             # <<<<<<<<<<<<<<
  *     return rlist, wlist, xlist
- * 
+ *
  */
       __pyx_t_6 = __Pyx_PyObject_Append(__pyx_v_xlist, __pyx_v_s); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1101; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_6);
@@ -8656,8 +8656,8 @@ static PyObject *__pyx_pf_3zmq_4_zmq_select(PyObject *__pyx_self, PyObject *__py
  *         if flags & POLLERR:
  *             xlist.append(s)
  *     return rlist, wlist, xlist             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = PyTuple_New(3); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1102; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -9604,14 +9604,14 @@ PyMODINIT_FUNC PyInit__zmq(void)
  * # In newer versions of Cython (at least 0.12.1) this is called automatically.
  * # We should wait for a few releases and then remove this call.
  * PyEval_InitThreads()             # <<<<<<<<<<<<<<
- * 
+ *
  * import copy as copy_mod
  */
   PyEval_InitThreads();
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":42
  * PyEval_InitThreads()
- * 
+ *
  * import copy as copy_mod             # <<<<<<<<<<<<<<
  * import cPickle as pickle
  * import random
@@ -9622,7 +9622,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":43
- * 
+ *
  * import copy as copy_mod
  * import cPickle as pickle             # <<<<<<<<<<<<<<
  * import random
@@ -9638,7 +9638,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
  * import cPickle as pickle
  * import random             # <<<<<<<<<<<<<<
  * import struct
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(((PyObject *)__pyx_n_s__random), 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 44; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
@@ -9649,7 +9649,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
  * import cPickle as pickle
  * import random
  * import struct             # <<<<<<<<<<<<<<
- * 
+ *
  * try:
  */
   __pyx_t_1 = __Pyx_Import(((PyObject *)__pyx_n_s__struct), 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 45; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -9659,7 +9659,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":47
  * import struct
- * 
+ *
  * try:             # <<<<<<<<<<<<<<
  *     import json
  * except ImportError:
@@ -9673,7 +9673,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
     /*try:*/ {
 
       /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":48
- * 
+ *
  * try:
  *     import json             # <<<<<<<<<<<<<<
  * except ImportError:
@@ -9745,7 +9745,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
  *         import simplejson as json
  *     except ImportError:             # <<<<<<<<<<<<<<
  *         json = None
- * 
+ *
  */
         __pyx_t_2 = PyErr_ExceptionMatches(__pyx_builtin_ImportError);
         if (__pyx_t_2) {
@@ -9759,7 +9759,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
  *         import simplejson as json
  *     except ImportError:
  *         json = None             # <<<<<<<<<<<<<<
- * 
+ *
  * include "allocate.pxi"
  */
           if (PyObject_SetAttr(__pyx_m, __pyx_n_s__json, Py_None) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 53; __pyx_clineno = __LINE__; goto __pyx_L14_except_error;}
@@ -9802,7 +9802,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":173
  * #-----------------------------------------------------------------------------
- * 
+ *
  * NOBLOCK = ZMQ_NOBLOCK             # <<<<<<<<<<<<<<
  * PAIR = ZMQ_PAIR
  * PUB = ZMQ_PUB
@@ -9813,7 +9813,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":174
- * 
+ *
  * NOBLOCK = ZMQ_NOBLOCK
  * PAIR = ZMQ_PAIR             # <<<<<<<<<<<<<<
  * PUB = ZMQ_PUB
@@ -10093,7 +10093,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
  * POLLIN = ZMQ_POLLIN
  * POLLOUT = ZMQ_POLLOUT             # <<<<<<<<<<<<<<
  * POLLERR = ZMQ_POLLERR
- * 
+ *
  */
   __pyx_t_4 = PyInt_FromLong(ZMQ_POLLOUT); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 197; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
@@ -10104,7 +10104,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
  * POLLIN = ZMQ_POLLIN
  * POLLOUT = ZMQ_POLLOUT
  * POLLERR = ZMQ_POLLERR             # <<<<<<<<<<<<<<
- * 
+ *
  * #-----------------------------------------------------------------------------
  */
   __pyx_t_4 = PyInt_FromLong(ZMQ_POLLERR); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -10113,11 +10113,11 @@ PyMODINIT_FUNC PyInit__zmq(void)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":205
- * 
+ *
  * # Often used (these are alse in errno.)
  * EAGAIN = ZMQ_EAGAIN             # <<<<<<<<<<<<<<
  * EINVAL = ZMQ_EINVAL
- * 
+ *
  */
   __pyx_t_4 = PyInt_FromLong(EAGAIN); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 205; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
@@ -10128,7 +10128,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
  * # Often used (these are alse in errno.)
  * EAGAIN = ZMQ_EAGAIN
  * EINVAL = ZMQ_EINVAL             # <<<<<<<<<<<<<<
- * 
+ *
  * # For Windows compatability
  */
   __pyx_t_4 = PyInt_FromLong(EINVAL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 206; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -10137,7 +10137,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":209
- * 
+ *
  * # For Windows compatability
  * ENOTSUP = ZMQ_ENOTSUP             # <<<<<<<<<<<<<<
  * EPROTONOSUPPORT = ZMQ_EPROTONOSUPPORT
@@ -10213,7 +10213,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
  * EADDRNOTAVAIL = ZMQ_EADDRNOTAVAIL
  * ECONNREFUSED = ZMQ_ECONNREFUSED             # <<<<<<<<<<<<<<
  * EINPROGRESS = ZMQ_EINPROGRESS
- * 
+ *
  */
   __pyx_t_4 = PyInt_FromLong(ECONNREFUSED); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 215; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
@@ -10224,7 +10224,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
  * EADDRNOTAVAIL = ZMQ_EADDRNOTAVAIL
  * ECONNREFUSED = ZMQ_ECONNREFUSED
  * EINPROGRESS = ZMQ_EINPROGRESS             # <<<<<<<<<<<<<<
- * 
+ *
  * # 0MQ Native
  */
   __pyx_t_4 = PyInt_FromLong(EINPROGRESS); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 216; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -10233,7 +10233,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":219
- * 
+ *
  * # 0MQ Native
  * EMTHREAD = ZMQ_EMTHREAD             # <<<<<<<<<<<<<<
  * EFSM = ZMQ_EFSM
@@ -10261,7 +10261,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
  * EFSM = ZMQ_EFSM
  * ENOCOMPATPROTO = ZMQ_ENOCOMPATPROTO             # <<<<<<<<<<<<<<
  * ETERM = ZMQ_ETERM
- * 
+ *
  */
   __pyx_t_4 = PyInt_FromLong(ENOCOMPATPROTO); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 221; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
@@ -10272,8 +10272,8 @@ PyMODINIT_FUNC PyInit__zmq(void)
  * EFSM = ZMQ_EFSM
  * ENOCOMPATPROTO = ZMQ_ENOCOMPATPROTO
  * ETERM = ZMQ_ETERM             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_4 = PyInt_FromLong(ETERM); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 222; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
@@ -10282,10 +10282,10 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":229
  *     return zmq_strerror(errnum)
- * 
+ *
  * class ZMQBaseError(Exception):             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 229; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(((PyObject *)__pyx_t_4));
@@ -10303,10 +10303,10 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":232
  *     pass
- * 
+ *
  * class ZMQError(ZMQBaseError):             # <<<<<<<<<<<<<<
  *     """Base exception class for 0MQ errors in Python."""
- * 
+ *
  */
   __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(((PyObject *)__pyx_t_4));
@@ -10324,10 +10324,10 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":235
  *     """Base exception class for 0MQ errors in Python."""
- * 
+ *
  *     def __init__(self, error=None):             # <<<<<<<<<<<<<<
  *         """Wrap an errno style error.
- * 
+ *
  */
   __pyx_t_3 = PyCFunction_New(&__pyx_mdef_3zmq_4_zmq_8ZMQError___init__, 0); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 235; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
@@ -10339,10 +10339,10 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":253
  *             self.errno = None
- * 
+ *
  *     def __str__(self):             # <<<<<<<<<<<<<<
  *         return self.errstr
- * 
+ *
  */
   __pyx_t_7 = PyCFunction_New(&__pyx_mdef_3zmq_4_zmq_8ZMQError___str__, 0); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 253; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
@@ -10357,7 +10357,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":256
  *         return self.errstr
- * 
+ *
  * class ZMQBindError(ZMQBaseError):             # <<<<<<<<<<<<<<
  *     """An error for bind_to_random_port."""
  *     pass
@@ -10381,10 +10381,10 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":612
  *     #-------------------------------------------------------------------------
- * 
+ *
  *     def send(self, object data, int flags=0, bool copy=True):             # <<<<<<<<<<<<<<
  *         """Send a message on this socket.
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyBool_FromLong(1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 612; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
@@ -10395,10 +10395,10 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":730
  *             raise ZMQError()
- * 
+ *
  *     def recv(self, int flags=0, copy=True):             # <<<<<<<<<<<<<<
  *         """Receive a message.
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyBool_FromLong(1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 730; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
@@ -10408,10 +10408,10 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":796
  *         return msg
- * 
+ *
  *     def send_multipart(self, msg_parts, int flags=0, copy=True):             # <<<<<<<<<<<<<<
  *         """Send a sequence of messages as a multipart message.
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyBool_FromLong(1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 796; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
@@ -10421,10 +10421,10 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":812
  *         self.send(msg_parts[-1], flags)
- * 
+ *
  *     def recv_multipart(self, int flags=0, copy=True):             # <<<<<<<<<<<<<<
  *         """Receive a multipart message as a list of messages.
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyBool_FromLong(1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 812; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
@@ -10433,11 +10433,11 @@ PyMODINIT_FUNC PyInit__zmq(void)
   __pyx_t_4 = 0;
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1012
- * 
- * 
+ *
+ *
  * class Poller(object):             # <<<<<<<<<<<<<<
  *     """An stateful poll interface that mirrors Python's built-in poll."""
- * 
+ *
  */
   __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1012; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(((PyObject *)__pyx_t_4));
@@ -10453,10 +10453,10 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1015
  *     """An stateful poll interface that mirrors Python's built-in poll."""
- * 
+ *
  *     def __init__(self):             # <<<<<<<<<<<<<<
  *         self.sockets = {}
- * 
+ *
  */
   __pyx_t_1 = PyCFunction_New(&__pyx_mdef_3zmq_4_zmq_6Poller___init__, 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1015; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
@@ -10468,10 +10468,10 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1018
  *         self.sockets = {}
- * 
+ *
  *     def register(self, socket, flags=POLLIN|POLLOUT):             # <<<<<<<<<<<<<<
  *         """Register a 0MQ socket or native fd for I/O monitoring.
- * 
+ *
  */
   __pyx_t_7 = __Pyx_GetName(__pyx_m, __pyx_n_s__POLLIN); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1018; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
@@ -10494,7 +10494,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1031
  *         self.sockets[socket] = flags
- * 
+ *
  *     def modify(self, socket, flags=POLLIN|POLLOUT):             # <<<<<<<<<<<<<<
  *         """Modify the flags for an already registered 0MQ socket or native fd."""
  *         self.register(socket, flags)
@@ -10520,10 +10520,10 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1035
  *         self.register(socket, flags)
- * 
+ *
  *     def unregister(self, socket):             # <<<<<<<<<<<<<<
  *         """Remove a 0MQ socket or native fd for I/O monitoring.
- * 
+ *
  */
   __pyx_t_6 = PyCFunction_New(&__pyx_mdef_3zmq_4_zmq_6Poller_unregister, 0); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1035; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_6);
@@ -10535,10 +10535,10 @@ PyMODINIT_FUNC PyInit__zmq(void)
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1045
  *         del self.sockets[socket]
- * 
+ *
  *     def poll(self, timeout=None):             # <<<<<<<<<<<<<<
  *         """Poll the registered 0MQ or native fds for I/O.
- * 
+ *
  */
   __pyx_t_7 = PyCFunction_New(&__pyx_mdef_3zmq_4_zmq_6Poller_poll, 0); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1045; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
@@ -10552,8 +10552,8 @@ PyMODINIT_FUNC PyInit__zmq(void)
   __Pyx_DECREF(((PyObject *)__pyx_t_4)); __pyx_t_4 = 0;
 
   /* "/Users/bgranger/Documents/Computation/zeromq/pyzmq/zmq/_zmq.pyx":1106
- * 
- * 
+ *
+ *
  * __all__ = [             # <<<<<<<<<<<<<<
  *     'Message',
  *     'Context',
@@ -10711,7 +10711,7 @@ PyMODINIT_FUNC PyInit__zmq(void)
   __Pyx_DECREF(((PyObject *)__pyx_t_4)); __pyx_t_4 = 0;
 
   /* "/Library/Frameworks/Python.framework/Versions/6.2/lib/python2.6/site-packages/Cython/Includes/stdlib.pxd":2
- * 
+ *
  * cdef extern from "stdlib.h" nogil:             # <<<<<<<<<<<<<<
  *     void free(void *ptr)
  *     void *malloc(size_t size)
